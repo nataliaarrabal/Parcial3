@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GoogleMaps</title>
+<script>
+	function comprobar(){
+		var num= document.forms(['formulario']['api'].value);
+		
+		if(num>0){
+			alert("todo está correcto");
+		}
+		
+	}
+</script>
+</head>
+<body>
+	<form name="formulario" method="get" action="https://www.google.com/maps/dir">
+		<input type="hidden" name="api" value="1">
+		<input type="text" name="origin">
+		<input type="text" name="destination">
+		<input type="submit" name="Submit" onclick="return comprobar();">
+
+		
+	</form>
+
+</body>
+</html>
